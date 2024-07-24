@@ -1,0 +1,107 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #BFDAFE;
+}
+
+.row {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginCart {
+  width: 40vw;
+  height: 50vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  row-gap: 20px;
+}
+
+form .input {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+form .input input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgba(192, 192, 192, 0.278);
+  border: solid 1px wheat;
+  outline: #BFDAFE;
+  padding: 0 10px;
+}
+
+.input input:focus {
+  border-color: blue; /* Border color on focus */
+  border-width: 2px; /* Border width on focus */
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Optional box shadow */
+}
+
+.input label {
+  margin-bottom: 10px;
+  color: #674eae;
+}
+
+.btn button:first-child {
+  width: 100px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: #A88BFA;
+  border-radius: 5px;
+  color: white;
+  font-size: medium;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn button:first-child:hover {
+  background-color: #674eae;
+  transition: ease-in-out 0.2s;
+}
+
+.btn button:last-child:hover {
+  border-bottom: 2px solid #A88BFA;
+}
+
+.btn button:last-child {
+  height: 20px;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  background-color: white;
+  color: #A88BFA;
+  font-size: medium;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px 0 70px;
+  margin-top: 20px;
+}
+
+.rights {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.logo {
+  width: 100px;
+}/*# sourceMappingURL=login.component.css.map */

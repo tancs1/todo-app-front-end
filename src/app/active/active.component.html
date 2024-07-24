@@ -1,0 +1,28 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+      <div>
+        <form (ngSubmit)="onSubmit()" #actorForm="ngForm">
+          <h1>Enter Todo:</h1>
+          <input type="text" [(ngModel)]="submittedText" name="toDotext" required>
+          <div class="save">
+            <button type="submit" >Save</button>
+          </div>
+        </form>
+      </div>{{todoData| json}}
+     <ng-container *ngFor="let item of todoData">
+      <div class="To-do-list">
+        <span><b>ID:</b>{{item.id}}</span>
+        <p ><b>Todo:</b>{{item.title}}</p>
+        <p ><b>Completed:</b>{{item.completed}}</p>
+        <p ><b>Post Date:</b>{{item.date}}</p>
+        <div class="btn">
+          <button type="button" (click)="updateTodo(item.id)" >Mark Completed</button>
+          <button type="button" (click)="deleteTodo(item.id)">Delete</button>
+          
+        </div>
+      </div>
+     </ng-container>
+    </div>
+  </div>
+  

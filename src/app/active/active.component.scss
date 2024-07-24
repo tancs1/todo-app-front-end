@@ -1,0 +1,112 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    max-height: fit-content;
+    background-color: #BFDAFE;
+display: flex;
+justify-content: center;
+
+}
+.container{
+    .row{
+       width: 50vw; 
+        padding: 20px;
+    }
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+border: solid 1px wheat; 
+outline: #BFDAFE;
+   padding: 0 10px;
+}
+.input input:focus{
+        border-color: blue  ; /* Border color on focus */
+        border-width: 2px;  /* Border width on focus */
+        box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Optional box shadow */
+      
+}
+.input label {
+    margin-bottom: 10px;
+    color: #674eae;
+}
+
+.btn button:first-child {
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #A88BFA;
+border-radius: 5px;
+color: white;
+font-size:medium;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn button:first-child:hover{
+    background-color: #674eae;
+    transition: ease-in-out 0.2s;
+    
+}
+.btn button:last-child:hover{
+    
+border-bottom: 2px solid #A88BFA;
+
+    
+}
+
+.btn button:last-child{
+
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: red;
+border-radius: 5px;
+color: white;
+font-size:medium;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.save{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.save button{
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: grey;
+border-radius: 5px;
+color: white;
+font-size:medium;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+
+}
+.btn{
+    width: 100%;
+    display: flex;
+   justify-content: end;
+        gap: 10px   ;
+}
+.rights{
+    text-align: center;
+    margin-top: 15px;
+}
+.To-do-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px 10px   ;
+    background-color: white;
+    border-radius: 10px;
+    border-color: #674eae 1px solid;
+    min-height: 10vh;
+    max-height: fit-content;    
+}

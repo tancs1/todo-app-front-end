@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <h1>Completed Todos </h1>
+        <ng-container *ngFor="let item of todoData">
+          <div class="To-do-list">
+            <span><b>ID:</b>{{item.id}}</span>
+            <p ><b>Todo:</b>{{item.title}}</p>
+            <p ><b>Completed:</b>{{item.completed}}</p>
+            <p ><b>Post Date:</b>{{item.date}}</p>
+            <div class="btn">
+              <button type="button" (click)="deleteTodo(item.id)">Delete</button>
+              
+            </div>
+          </div>
+         </ng-container>
+    </div>
+</div>
