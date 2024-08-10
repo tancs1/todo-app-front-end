@@ -21,5 +21,5 @@ export const custom_axios = axios.create({
   timeout: 5000
 });
 
-console.log('axios instance:', custom_axios); // Check if this logs the axios instance for further debugging
+// Check if this logs the axios instance for further debugging
 

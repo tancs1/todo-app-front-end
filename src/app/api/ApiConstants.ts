@@ -18,16 +18,22 @@ export const ApiConstants = {
     Mark_Completed: (todoId: number) => {
       return '/todo/' + todoId;
     },
+    FIND_TODO_USERID:(userId:number) =>{
+      return '/todo/findAllTodo/' + userId;
+    }
   },
   USER:{
     SignUp:()=>{
-return "/user/signUp"
+return "/users/signUp"
     },
     Get_All_User: () => {
-        return '/user';
+        return '/users';
+      },
+      Get_All_User_ForLogin:()=>{
+        return '/users/findAllForLogin'
       },
       Delete_User: (userId: number) => {
-        return '/user/' + userId;
+        return '/users/' + userId;
       },
   },
   LOGIN:{

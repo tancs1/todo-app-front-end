@@ -12,14 +12,20 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>asd</td>
-                    <td>asdsa</td>
-                    <td>asds</td>
-                    <td> <div class="btn">
-                        <button type="button">Delete</button>
-                      </div></td>
-                </tr>
+                @for (item of userData; track $index) {
+                <tr >
+                  
+                        
+                        <td>{{item.firstName}}</td>
+                        <td>{{item.lastName}}</td>
+                        <td>{{item.email}}</td>
+                        <td> <div class="btn" >
+                            <button [hidden]="item.role =='ADMIN'"  type="button" (click)="deleteTodo(item.id)">Delete</button>
+                          </div></td>
+                          
+                        </tr>
+                    }
+           
             </tbody>
         </table>
     </div>

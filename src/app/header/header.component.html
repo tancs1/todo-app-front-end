@@ -6,7 +6,7 @@
             </li>
             <li routerLink="/active" routerLinkActive="router-link-active">Active Todos</li>
             <li routerLink="/completed" routerLinkActive="router-link-active">Completed</li>
-            <li routerLink="/users" routerLinkActive="router-link-active">Users</li>
+            <li routerLink="/users" *ngIf="isAdmin" routerLinkActive="router-link-active">Users</li>
             <li (click)="logout()"> log out</li>
         </ul>
     </nav>

@@ -52,8 +52,8 @@ if(userId){
 }else{}
   }catch(error){
     console.log(error);
-    
-  }
+      
+    }
 }
  async onSubmit() {
     if (this.submittedText == "") {
